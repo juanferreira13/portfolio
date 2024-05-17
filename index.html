@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="./styles/geral.css" />
+  <link rel="stylesheet" href="./styles/mediaqueries.css" />
+</head>
+
+<body>
+  <div id="background">  <!-- Background da pagina -->
+    <img src="/assets/1636957860981.jpg" alt="">
+  </div><!-- Background da pagina -->
+  <nav id="desktop-nav"><!--navbar-->
+    <div class="logo">Juan</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">Sobre</a></li>
+        <li><a href="#experience">Experiencia</a></li>
+        <li><a href="#projects">Projetos</a></li>
+        <li><a href="#contact">Contato</a></li>
+      </ul>
+    </div>
+  </nav><!--navbar-->
+  <nav id="res-nav"><!--nav responsiva-->
+    <div class="logo">Juan</div>
+    <div class="res-menu">
+      <div class="res-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">Sobre</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experiencia</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projetos</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contato</a></li>
+      </div>
+    </div>
+  </nav><!--nav responsiva-->
+  <section id="profile"><!--perfil-->
+    <div class="section__pic-container">
+      <img src="./assets/profile-pic.png" alt="Juan" />
+      <div class="circle"></div>
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Ola, sou</p>
+      <h1 class="title">Juan Ferreira</h1>
+      <p class="section__text__p2">Dev Frontend</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./assets/Currículo.pdf')">
+          Download CV
+        </button>
+      </div>
+      <div id="socials-container">
+        <img src="./assets/linkedin.png" alt="LinkedIn" class="icon"
+          onclick="location.href='https://www.linkedin.com/in/juan-ferreira-da-silva/'" />
+        <img src="./assets/github.png" alt="My Github profile" class="icon"
+          onclick="location.href='https://github.com/juanferreira13'" />
+      </div>
+    </div>
+  </section><!--perfil-->
+  <section id="about"><!--sobre-->
+    <p class="section__text__p1">Saiba +</p>
+    <h1 class="title">Sobre mim</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <div class="contorno"></div>
+        <img src="./assets/about-pic.png" alt="Profile picture" class="about-pic" />
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./assets/education.png" alt="Education icon" class="icon" />
+            <h3>Graduação</h3>
+            <p>Bacharelado em Análise e Desenvolvimento de Sistemas<br />UniCeub <br /><span>3° Semestre</span> </p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            Cursando ensino superior em Análise e Desenvolvimento de Sistemas no UNICEUB, estando no 3° semestre.
+            Desenvolvimento com habilidades em Html, CSS, JavaScript, TypeScript, React, Angular, Next.Js, Node.JS.
+          </p>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+  </section><!--sobre-->
+  <section id="experience"><!--experiencias-->
+    <h1 class="title">Experiencia</h1>
+    <div class="experience-details-container">
+      <div class="container">
+        <div class="skill-box">
+          <span class="title">HTML</span>
+      
+          <div class="skill-bar">
+            <span class="skill-per html">
+              <span class="tooltip">80%</span>
+            </span>
+          </div>
+        </div>
+      
+        <div class="skill-box">
+          <span class="title">CSS</span>
+      
+          <div class="skill-bar">
+            <span class="skill-per css">
+              <span class="tooltip">80%</span>
+            </span>
+          </div>
+        </div>
+        <div class="skill-box">
+          <span class="title">JavaScript</span>
+      
+          <div class="skill-bar">
+            <span class="skill-per javascript">
+              <span class="tooltip">50%</span>
+            </span>
+          </div>
+        </div>
+        <div class="skill-box">
+          <span class="title">React</span>
+      
+          <div class="skill-bar">
+            <span class="skill-per react">
+              <span class="tooltip">30%</span>
+            </span>
+          </div>
+        </div>
+        <div class="skill-box">
+          <span class="title">Angular</span>
+      
+          <div class="skill-bar">
+            <span class="skill-per angular">
+              <span class="tooltip">30%</span>
+            </span>
+          </div>
+        </div>
+        <div class="skill-box">
+          <span class="title">Next.Js</span>
+      
+          <div class="skill-bar">
+            <span class="skill-per next">
+              <span class="tooltip">30%</span>
+            </span>
+          </div>
+        </div>
+        <div class="skill-box">
+          <span class="title">Node</span>
+      
+          <div class="skill-bar">
+            <span class="skill-per node">
+              <span class="tooltip">20%</span>
+            </span>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+  </section><!--experiencias-->
+  <section id="projects"><!--projetos-->
+    <p class="section__text__p1">conheça alguns dos meus</p>
+    <h1 class="title">Projetos</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img
+              src="./assets/project-1.png"
+              alt="Ta Na Medida"
+              class="project-img"
+            />
+          </div>
+          <h2 class="experience-sub-title project-title">Ta Na Medida</h2>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/juanferreira13/ta-na-medida'"
+            >
+              Github
+            </button>
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/juanferreira13/ta-na-medida'"
+            >
+              Live Demo
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img
+              src="./assets/project-2.png"
+              alt="Portobelo Viagens"
+              class="project-img"
+            />
+          </div>
+          <h2 class="experience-sub-title project-title">Portobelo Viagens</h2>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/juanferreira13/site-viagens'"
+            >
+              Github
+            </button>
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/juanferreira13/site-viagens'"
+            >
+              Live Demo
+            </button>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <img
+      src="./assets/arrow.png"
+      alt="Arrow icon"
+      class="icon arrow"
+      onclick="location.href='./#contact'"
+    />
+  </section><!--projetos-->
+  <section id="contact"><!--contato-->
+    <h1 class="title">Entre em Contato</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+        <p><a href="mailto:ferreira.dev13@gmail.com">ferreira.dev13@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+        <p><a href="https://www.linkedin.com/in/juan-ferreira-da-silva/">LinkedIn</a></p>
+      </div>
+    </div>
+  </section><!--contato-->
+  <footer><!--footer-->
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#experience">Experiencias</a></li>
+          <li><a href="#projects">Projetos</a></li>
+          <li><a href="#contact">Contato</a></li>
+        </ul>
+      </div>
+    </nav>
+  </footer><!--footer-->
+  <script src="script.js"></script>
+</body>
+
+</html>

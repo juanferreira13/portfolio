@@ -1,0 +1,31 @@
+
+/* PROJECTS SECTION */
+#projects {
+  position: relative;
+  margin-top: 3rem;
+}
+
+.color-container {
+  border-color: rgb(63, 63, 63);
+  background: rgba(48, 48, 48, 0.185);
+}
+
+.project-img {
+  border-radius: 2rem;
+  width: 90%;
+  height: 90%;
+}
+
+.project-title {
+  margin: 1rem;
+  color: rgb(255, 255, 255);
+}
+
+.project-btn {
+  color: black;
+  border-color: rgb(163, 163, 163);
+}
+
+  
+  
+  
