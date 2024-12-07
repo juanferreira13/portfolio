@@ -58,22 +58,22 @@
 }
 
 .skill-per.javascript {
-  width: 50%;
+  width: 70%;
   animation-delay: 0.2s;
 }
 
 .skill-per.react {
-  width: 30%;
+  width: 60%;
   animation-delay: 0.2s;
 }
 
 .skill-per.angular {
-  width: 30%;
+  width: 40%;
   animation-delay: 0.2s;
 }
 
 .skill-per.next {
-  width: 30%;
+  width: 40%;
   animation-delay: 0.2s;
 }
 
